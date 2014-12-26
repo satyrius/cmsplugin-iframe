@@ -23,7 +23,7 @@ INSTALLED_APPS = [
     'cms',
     'menus',
     'mptt',
-    'cmsplugin_comments',
+    'cmsplugin_iframe',
 ]
 
 TEMPLATE_CONTEXT_PROCESSORS = [
