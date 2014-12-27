@@ -36,3 +36,25 @@ Configure installed apps in your ``settings.py`` ::
 Migrate your database ::
 
   django-admin.py migrate cmsplugin_iframe
+
+Usage
+=====
+
+Add plugin to the page with common way. You can specify video by URL or give plugin an iframe html snippet to parse. 
+To customize how it looks you can override `cms/plugins/iframe.html`.
+
+Roadmap
+=======
+- Python 3 support
+
+Changelog
+=========
+The changelog can be found at `repo's release notes <https://github.com/satyrius/cmsplugin-iframe/releases>`_
+
+Contributing
+============
+Fork the repo, create a feature branch then send me pull request. Feel free to create new issues or contact me via email.
+
+Translation
+-----------
+You could also help me to translate `cmsplugin-iframe` to your native language `with Transifex <https://www.transifex.com/projects/p/cmsplugin-iframe/resource/main/>`_
