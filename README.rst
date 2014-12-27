@@ -2,10 +2,19 @@
 cmsplugin-iframe
 ================
 
-|ci|
+|ci| |pypi| |status|
 
 .. |ci| image:: https://travis-ci.org/satyrius/cmsplugin-iframe.png?branch=master
     :target: https://travis-ci.org/satyrius/cmsplugin-iframe
+
+.. |pypi| image:: https://pypip.in/version/cmsplugin-iframe/badge.png?text=pypi
+    :target: https://pypi.python.org/pypi/cmsplugin-iframe/
+    :alt: Latest Version
+
+.. |status| image:: https://pypip.in/status/cmsplugin-iframe/badge.png
+    :target: https://pypi.python.org/pypi/cmsplugin-iframe/
+    :alt: Development Status
+
 
 All major video hosters like *YouTube* and *Vemeo* has embed codes as *html iframe* snippets.
 This Django CMS plugin allows you to add video iframe to the page (actually you can add any page as iframe, not only video).
