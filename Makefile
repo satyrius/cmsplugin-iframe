@@ -6,6 +6,11 @@ messages:
 	cd cmsplugin_iframe && \
 	django-admin.py makemessages -l en
 
+compile:
+	source .tox/django-1.7/bin/activate && \
+	cd cmsplugin_iframe && \
+	django-admin.py compilemessages
+
 south_migrations:
 	DJANGO_SETTINGS_MODULE=settings_south \
 	source .tox/django-1.6/bin/activate && \
