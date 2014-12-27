@@ -13,7 +13,7 @@ class EmbedURLField(forms.URLField):
     def clean(self, value):
         if re.search(r'<iframe', value, re.IGNORECASE):
             soup = BeautifulSoup(value)
-            src = soup.iframe['src']
+            src = soup.iframe.get('src')
             if not src:
                 raise forms.ValidationError(
                     _('The `iframe` HTML snippet was passed, but there is no '

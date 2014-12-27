@@ -28,3 +28,11 @@ class IframeFormTest(unittest.TestCase):
         form = IframeForm(data={'src': emded_code})
         self.assertTrue(form.is_valid(), form.errors)
         self.assertEqual(form.cleaned_data['src'], self.url)
+
+    def test_iframe_without_src(self):
+        emded_code = '''
+            <iframe frameborder="0" allowfullscreen></iframe>
+        '''.format(url=self.url).strip()
+        form = IframeForm(data={'src': emded_code})
+        self.assertFalse(form.is_valid())
+        self.assertIn('src', form.errors)
