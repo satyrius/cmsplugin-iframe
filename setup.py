@@ -33,6 +33,7 @@ setup(
     include_package_data=True,
     install_requires=[
         'django-cms',
+        'beautifulsoup4',
     ],
     tests_require=['tox>=1.8'],
     zip_safe=False,

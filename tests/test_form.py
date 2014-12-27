@@ -19,3 +19,12 @@ class IframeFormTest(unittest.TestCase):
         form = IframeForm(data={'src': emded_code})
         self.assertTrue(form.is_valid(), form.errors)
         self.assertEqual(form.cleaned_data['src'], self.url)
+
+    def test_extract_from_embed_code_single_quote(self):
+        emded_code = '''
+            <iframe width='560' height='315' src='{url}'
+                frameborder='0' allowfullscreen></iframe>
+        '''.format(url=self.url).strip()
+        form = IframeForm(data={'src': emded_code})
+        self.assertTrue(form.is_valid(), form.errors)
+        self.assertEqual(form.cleaned_data['src'], self.url)

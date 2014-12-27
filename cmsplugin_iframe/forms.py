@@ -1,5 +1,6 @@
 import re
 
+from bs4 import BeautifulSoup
 from django import forms
 from django.utils.translation import ugettext_lazy as _
 
@@ -11,13 +12,14 @@ class EmbedURLField(forms.URLField):
 
     def clean(self, value):
         if re.search(r'<iframe', value, re.IGNORECASE):
-            m = re.search(r'src="([^"]+)"', value)
-            if not m:
+            soup = BeautifulSoup(value)
+            src = soup.iframe['src']
+            if not src:
                 raise forms.ValidationError(
                     _('The `iframe` HTML snippet was passed, but there is no '
                       '`src` arrtibute was found'),
                     code='invalid')
-            value = m.group(1)
+            value = src
         return super(EmbedURLField, self).clean(value)
 
 
