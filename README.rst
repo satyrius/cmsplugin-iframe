@@ -2,4 +2,10 @@
 cmsplugin-iframe
 ================
 
-Django CMS plugin for adding iframe to the page. It is mostly to allow post video iframe in replacement to DjangoCMS video plugin
+|ci|
+
+.. |ci| image:: https://travis-ci.org/satyrius/cmsplugin-iframe?branch=master
+    :target: https://travis-ci.org/satyrius/cmsplugin-iframe
+
+All major video hosters like *YouTube* and *Vemeo* has embed codes as *html iframe* snippets.
+This Django CMS plugin allows you to add video iframe to the page (actually you can add any page as iframe, not only video).
