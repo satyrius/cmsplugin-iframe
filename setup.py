@@ -4,7 +4,7 @@ from cmsplugin_iframe import __version__
 
 
 CLASSIFIERS = [
-    'Development Status :: 1 - Planning',
+    'Development Status :: 4 - Beta',
     'Environment :: Web Environment',
     'Framework :: Django',
     'Intended Audience :: Developers',
