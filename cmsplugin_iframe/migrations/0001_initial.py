@@ -15,7 +15,7 @@ class Migration(migrations.Migration):
             name='IframePlugin',
             fields=[
                 ('cmsplugin_ptr', models.OneToOneField(parent_link=True, auto_created=True, primary_key=True, serialize=False, to='cms.CMSPlugin')),
-                ('src', models.URLField(verbose_name='iframe src attribute, video player url')),
+                ('src', models.URLField()),
             ],
             options={
                 'abstract': False,
