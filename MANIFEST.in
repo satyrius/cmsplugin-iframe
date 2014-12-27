@@ -1,2 +1,4 @@
 include LICENSE
 include README.rst
+recursive-include cmsplugin_iframe/templates *.html
+recursive-include cmsplugin_iframe/locale *.po *.mo

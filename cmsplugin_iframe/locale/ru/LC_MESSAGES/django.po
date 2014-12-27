@@ -1,0 +1,37 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Anton Egorov <anton.egoroff@gmail.com>, 2014
+msgid ""
+msgstr ""
+"Project-Id-Version: cmsplugin-iframe\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-12-27 11:40-0600\n"
+"PO-Revision-Date: 2014-12-27 18:04+0000\n"
+"Last-Translator: Anton Egorov <anton.egoroff@gmail.com>\n"
+"Language-Team: Russian (http://www.transifex.com/projects/p/cmsplugin-iframe/language/ru/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ru\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: cms_plugins.py:12
+msgid "Iframe Video Plugin"
+msgstr "Видео iframe"
+
+#: forms.py:19
+msgid ""
+"The `iframe` HTML snippet was passed, but there is no `src` arrtibute was "
+"found"
+msgstr "Передан HTML код для вставки, но в нем отсутствует атрибут `src`"
+
+#: forms.py:28
+msgid "Embed"
+msgstr "Код для вставки"
+
+#: forms.py:29
+msgid "Embed url or whole html embed code"
+msgstr "Можно использовать как URL, так и HTML код для вставки целиком"
