@@ -5,7 +5,8 @@ SITE_ID = 1
 TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
 NOSE_ARGS = ['--nologcapture', '--with-id']
 
-MEDIA_ROOT = '/tmp/cmsplugin-comments/'
+MEDIA_ROOT = '/tmp/cmsplugin-iframe/media/'
+STATIC_ROOT = '/tmp/cmsplugin-iframe/static/'
 ROOT_URLCONF = 'urls'
 
 DATABASES = {
