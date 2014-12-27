@@ -22,7 +22,9 @@ class EmbedURLField(forms.URLField):
 
 
 class IframeForm(forms.ModelForm):
-    src = EmbedURLField()
+    src = EmbedURLField(
+        label=_('Embed'),
+        help_text=_('Embed url or whole html embed code'))
 
     class Meta:
         model = IframePlugin
