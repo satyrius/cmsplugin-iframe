@@ -1,0 +1,8 @@
+[main]
+host = https://www.transifex.com
+
+[cmsplugin-iframe.main]
+file_filter = cmsplugin_iframe/locale/<lang>/LC_MESSAGES/django.po
+source_file = cmsplugin_iframe/locale/en/LC_MESSAGES/django.po
+source_lang = en
+type = PO
