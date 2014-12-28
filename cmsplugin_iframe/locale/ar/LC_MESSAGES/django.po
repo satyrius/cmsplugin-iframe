@@ -1,0 +1,37 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Bashar Al-Abdulhadi, 2014
+msgid ""
+msgstr ""
+"Project-Id-Version: cmsplugin-iframe\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-12-27 11:40-0600\n"
+"PO-Revision-Date: 2014-12-28 11:35+0000\n"
+"Last-Translator: Bashar Al-Abdulhadi\n"
+"Language-Team: Arabic (http://www.transifex.com/projects/p/cmsplugin-iframe/language/ar/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ar\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+
+#: cms_plugins.py:12
+msgid "Iframe Video Plugin"
+msgstr "ملحق فيديو المضمّن (Iframe)"
+
+#: forms.py:19
+msgid ""
+"The `iframe` HTML snippet was passed, but there is no `src` arrtibute was "
+"found"
+msgstr "اذا تم مصادقة مقتطف `iframe` المضمّن, ولكن لم يتم العثور على مصدر `src` السمة"
+
+#: forms.py:28
+msgid "Embed"
+msgstr "التضمين"
+
+#: forms.py:29
+msgid "Embed url or whole html embed code"
+msgstr "تضمين الرابط او كود الـ html بالكامل"
