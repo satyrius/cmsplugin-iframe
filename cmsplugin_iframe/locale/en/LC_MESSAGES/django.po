@@ -23,7 +23,7 @@ msgstr ""
 
 #: forms.py:19
 msgid ""
-"The `iframe` HTML snippet was passed, but there is no `src` arrtibute was "
+"The `iframe` HTML snippet was passed, but there is no `src` attribute was "
 "found"
 msgstr ""
 

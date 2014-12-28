@@ -1,7 +1,7 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# 
+#
 # Translators:
 # Bashar Al-Abdulhadi, 2014
 msgid ""
@@ -24,7 +24,7 @@ msgstr "ملحق فيديو المضمّن (Iframe)"
 
 #: forms.py:19
 msgid ""
-"The `iframe` HTML snippet was passed, but there is no `src` arrtibute was "
+"The `iframe` HTML snippet was passed, but there is no `src` attribute was "
 "found"
 msgstr "اذا تم مصادقة مقتطف `iframe` المضمّن, ولكن لم يتم العثور على مصدر `src` السمة"
 
