@@ -30,3 +30,4 @@ class IframeForm(forms.ModelForm):
 
     class Meta:
         model = IframePlugin
+        fields = "__all__"
