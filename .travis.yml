@@ -2,12 +2,16 @@ language: python
 
 python:
   - "2.7"
+
 env:
-  - DJANGO_VERSION=1.5
-  - DJANGO_VERSION=1.6
-  - DJANGO_VERSION=1.7
+  - DJANGO_VERSION=1.5 CMS_VERSION=3.0
+  - DJANGO_VERSION=1.6 CMS_VERSION=3.0
+  - DJANGO_VERSION=1.7 CMS_VERSION=3.0
+  - DJANGO_VERSION=1.6 CMS_VERSION=3.1
+  - DJANGO_VERSION=1.7 CMS_VERSION=3.1
+  - DJANGO_VERSION=1.8 CMS_VERSION=3.1
 
 install:
-  - pip install tox>=1.8
+  - pip install tox>=2.0
 
-script: tox -e django-${DJANGO_VERSION},pep8
+script: tox -e django${DJANGO_VERSION}-cms${CMS_VERSION},pep8

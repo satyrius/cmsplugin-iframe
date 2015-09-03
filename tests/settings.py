@@ -1,3 +1,6 @@
+from cms import __version__ as cms_version
+is_30 = str(cms_version).startswith('3.0')
+
 LANGUAGE_CODE = 'en'
 SECRET_KEY = 'ji2r2iGkZqJVbWDhXrgDKDR2qG#mmtvBZXPXDugA4H)KFLwLHy'
 SITE_ID = 1
@@ -23,7 +26,7 @@ INSTALLED_APPS = [
     'django_nose',
     'cms',
     'menus',
-    'mptt',
+    is_30 and 'mptt' or 'treebeard',
     'cmsplugin_iframe',
 ]
 
