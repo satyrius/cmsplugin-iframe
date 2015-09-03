@@ -7,6 +7,9 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.csrf.CsrfViewMiddleware'
 )
 
-MIGRATION_MODULES = {
-    'cms': 'cms.migrations_django',
-}
+# Native django migrations was placed in migrations_django folder before
+# cms 3.1 release, so we have to hack this in runtime
+if is_30:
+    MIGRATION_MODULES = {
+        'cms': 'cms.migrations_django',
+    }
