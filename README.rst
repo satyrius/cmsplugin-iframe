@@ -4,14 +4,14 @@ cmsplugin-iframe
 
 |ci| |pypi| |status|
 
-.. |ci| image:: https://travis-ci.org/satyrius/cmsplugin-iframe.png?branch=master
+.. |ci| image:: https://img.shields.io/travis/satyrius/cmsplugin-iframe.svg
     :target: https://travis-ci.org/satyrius/cmsplugin-iframe
 
-.. |pypi| image:: https://pypip.in/version/cmsplugin-iframe/badge.png?text=pypi
+.. |pypi| image:: https://img.shields.io/pypi/v/cmsplugin-iframe.svg
     :target: https://pypi.python.org/pypi/cmsplugin-iframe/
     :alt: Latest Version
 
-.. |status| image:: https://pypip.in/status/cmsplugin-iframe/badge.png
+.. |status| image:: https://img.shields.io/pypi/status/cmsplugin-iframe.svg
     :target: https://pypi.python.org/pypi/cmsplugin-iframe/
     :alt: Development Status
 
@@ -49,7 +49,7 @@ Migrate your database ::
 Usage
 =====
 
-Add plugin to the page with common way. You can specify video by URL or give plugin an iframe html snippet to parse. 
+Add plugin to the page with common way. You can specify video by URL or give plugin an iframe html snippet to parse.
 To customize how it looks you can override `cms/plugins/iframe.html`.
 
 Roadmap
