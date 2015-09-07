@@ -30,6 +30,6 @@ class IframeForm(forms.ModelForm):
 
     class Meta:
         model = IframePlugin
-        # Set fields list explicitly, because of Django 1.8 requiremets.
+        # Set fields list explicitly, because of Django 1.8 requirements.
         # We cannot use fields = '__all__' because of Django 1.5.
         exclude = ('id',)
