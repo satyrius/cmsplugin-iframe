@@ -22,9 +22,9 @@ This Django CMS plugin allows you to add video iframe to the page (actually you 
 Requirements
 ============
 
-It works fine and tested under ``Python`` ``2.7``, ``3.4`` and ``3.5``. The following libraries are required
+It works fine and tested under both ``Python 2`` ``Python 3``. The following libraries are required
 
-- ``Django`` >= 1.5
+- ``Django`` >= 1.5 (use ``Django`` >= 1.8 for ``Python 3.5``, because of `HTMLParser <https://docs.python.org/3/whatsnew/3.5.html#changes-in-the-python-api>`_)
 - ``django-cms`` >= 3.0 (we recommend to use Django CMS 3.0 and higher, contact us if you need prior CMS versions supports and have some issues)
 - ``beautifulsoup4`` for iframe embed snippets parsing
 
