@@ -3,7 +3,6 @@ language: python
 python:
   - "2.7"
   - "3.4"
-  - "3.5"
 
 env:
   - DJANGO_VERSION=1.5 CMS_VERSION=3.0
@@ -14,13 +13,9 @@ env:
   - DJANGO_VERSION=1.8 CMS_VERSION=3.1
 
 matrix:
-  exclude:
+  include:
     - python: "3.5"
-      env: DJANGO_VERSION=1.5
-    - python: "3.5"
-      env: DJANGO_VERSION=1.6
-    - python: "3.5"
-      env: DJANGO_VERSION=1.7
+      env: DJANGO_VERSION=1.8 CMS_VERSION=3.1
 
 install:
   - pip install tox>=2.0
