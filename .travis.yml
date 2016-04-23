@@ -11,11 +11,17 @@ env:
   - DJANGO_VERSION=1.6 CMS_VERSION=3.1
   - DJANGO_VERSION=1.7 CMS_VERSION=3.1
   - DJANGO_VERSION=1.8 CMS_VERSION=3.1
+  - DJANGO_VERSION=1.8 CMS_VERSION=3.2
+  - DJANGO_VERSION=1.8 CMS_VERSION=3.2
 
 matrix:
   include:
     - python: "3.5"
       env: DJANGO_VERSION=1.8 CMS_VERSION=3.1
+    - python: "3.5"
+      env: DJANGO_VERSION=1.8 CMS_VERSION=3.2
+    - python: "3.5"
+      env: DJANGO_VERSION=1.9 CMS_VERSION=3.2
 
 install:
   - pip install tox>=2.0
