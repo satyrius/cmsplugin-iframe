@@ -12,7 +12,7 @@ class EmbedURLField(forms.URLField):
 
     def clean(self, value):
         if re.search(r'<iframe', value, re.IGNORECASE):
-            soup = BeautifulSoup(value)
+            soup = BeautifulSoup(value, 'html5lib')
             src = soup.iframe.get('src')
             if not src:
                 raise forms.ValidationError(
